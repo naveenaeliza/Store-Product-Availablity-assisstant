@@ -1,0 +1,293 @@
+2026-07-15 06:51:47,910 | INFO | app.api.routes | Received availability request for product: 'iphone 16 available near me?'
+2026-07-15 06:51:47,911 | INFO | app.api.routes | Creating MCP client
+2026-07-15 06:51:47,911 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 06:51:47,911 | INFO | app.api.routes | Sending request to MCP server
+2026-07-15 06:51:47,911 | INFO | mcp_client | Preparing availability check for product: iphone 16 available near me?
+2026-07-15 06:51:47,911 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 06:51:47,931 | INFO | mcp_client | STDIO connection established.
+2026-07-15 06:51:47,932 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 06:51:50,386 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 06:51:50,386 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'iphone 16 available near me?', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 06:51:52,246 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 06:51:52,246 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 06:51:52,247 | INFO | mcp_client | Closing MCP session.
+2026-07-15 06:51:52,632 | INFO | app.api.routes | Received response from MCP server
+2026-07-15 06:51:52,632 | INFO | app.api.routes | Invoking Gemini to generate a natural language response
+2026-07-15 06:51:52,644 | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-07-15 06:51:56,914 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-15 06:51:56,916 | INFO | app.api.routes | Returning successful response to frontend
+2026-07-15 06:54:08,677 | INFO | app.api.routes | Received availability request for product: 'write a code'
+2026-07-15 06:54:08,677 | INFO | app.api.routes | Creating MCP client
+2026-07-15 06:54:08,677 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 06:54:08,677 | INFO | app.api.routes | Sending request to MCP server
+2026-07-15 06:54:08,677 | INFO | mcp_client | Preparing availability check for product: write a code
+2026-07-15 06:54:08,678 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 06:54:08,684 | INFO | mcp_client | STDIO connection established.
+2026-07-15 06:54:08,684 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 06:54:11,264 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 06:54:11,264 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'write a code', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 06:54:11,994 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 06:54:11,994 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 06:54:11,994 | INFO | mcp_client | Closing MCP session.
+2026-07-15 06:54:12,374 | INFO | app.api.routes | Received response from MCP server
+2026-07-15 06:54:12,375 | ERROR | app.api.routes | MCP returned an error: Product not found.
+2026-07-15 09:06:25,978 | INFO | app.api.routes | Received availability request for product: 'which is the closest store near me'
+2026-07-15 09:06:25,979 | INFO | app.api.routes | Creating MCP client
+2026-07-15 09:06:25,979 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 09:06:25,979 | INFO | app.api.routes | Sending request to MCP server
+2026-07-15 09:06:25,979 | INFO | mcp_client | Preparing availability check for product: which is the closest store near me
+2026-07-15 09:06:25,980 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 09:06:26,007 | INFO | mcp_client | STDIO connection established.
+2026-07-15 09:06:26,008 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 09:06:29,778 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 09:06:29,778 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'which is the closest store near me', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 09:06:31,552 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 09:06:31,552 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 09:06:31,552 | INFO | mcp_client | Closing MCP session.
+2026-07-15 09:06:31,859 | INFO | app.api.routes | Received response from MCP server
+2026-07-15 09:06:31,859 | ERROR | app.api.routes | MCP returned an error: Product not found.
+2026-07-15 09:17:02,574 | INFO | app.api.routes | Received availability request for product: 'iPhone 12'
+2026-07-15 09:17:02,575 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 09:17:05,240 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-15 09:17:05,242 | INFO | app.api.routes | Gemini requested function calls: [FunctionCall(
+  args={
+    'product_name': 'iPhone 12',
+    'user_latitude': 10.0099536,
+    'user_longitude': 76.364782
+  },
+  name='check_product_availability'
+)]
+2026-07-15 09:17:05,242 | INFO | app.api.routes | Executing availability tool: product_name='iPhone 12', latitude=10.0099536, longitude=76.364782
+2026-07-15 09:17:05,242 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 09:17:05,242 | INFO | mcp_client | Preparing availability check for product: iPhone 12
+2026-07-15 09:17:05,243 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 09:17:05,366 | INFO | mcp_client | STDIO connection established.
+2026-07-15 09:17:05,366 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 09:17:09,622 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 09:17:09,623 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'iPhone 12', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 09:17:13,928 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 09:17:13,928 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 09:17:13,928 | INFO | mcp_client | Closing MCP session.
+2026-07-15 09:17:14,241 | INFO | app.api.routes | Tool output: {'success': True, 'product': 'Apple iPhone 16 128GB', 'store_name': 'MyG Kakkanad', 'address': 'Seaport-Airport Road, Kakkanad', 'city': 'Kochi', 'distance_km': 1.1, 'available_stock': 3}
+2026-07-15 09:17:14,241 | INFO | app.api.routes | Invoking Gemini again with tool output
+2026-07-15 09:21:37,289 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 09:21:37,290 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 09:21:39,124 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-15 09:21:39,126 | INFO | app.api.routes | Gemini requested function calls: [FunctionCall(
+  args={
+    'product_name': 'google pixel 9',
+    'user_latitude': 10.0099536,
+    'user_longitude': 76.364782
+  },
+  name='check_product_availability'
+)]
+2026-07-15 09:21:39,127 | INFO | app.api.routes | Executing availability tool: product_name='google pixel 9', latitude=10.0099536, longitude=76.364782
+2026-07-15 09:21:39,127 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 09:21:39,127 | INFO | mcp_client | Preparing availability check for product: google pixel 9
+2026-07-15 09:21:39,128 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 09:21:39,266 | INFO | mcp_client | STDIO connection established.
+2026-07-15 09:21:39,266 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 09:21:43,324 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 09:21:43,324 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'google pixel 9', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 09:21:46,650 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 09:21:46,650 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 09:21:46,650 | INFO | mcp_client | Closing MCP session.
+2026-07-15 09:21:46,982 | INFO | app.api.routes | Tool output: {'success': True, 'product': 'Google Pixel 9', 'store_name': 'MyG Kakkanad', 'address': 'Seaport-Airport Road, Kakkanad', 'city': 'Kochi', 'distance_km': 1.1, 'available_stock': 2}
+2026-07-15 09:21:46,983 | INFO | app.api.routes | Invoking Gemini again with tool output
+2026-07-15 09:21:49,103 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-15 09:21:49,106 | INFO | app.api.routes | Returning successful response to frontend
+2026-07-15 11:05:19,517 | INFO | app.api.routes | Received availability request for product: 'write a python code to generate the availability tool'
+2026-07-15 11:05:19,518 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 11:05:21,309 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-15 11:05:21,320 | INFO | app.api.routes | Gemini resolved the request directly without tool calls
+2026-07-15 11:05:21,320 | INFO | app.api.routes | Returning successful response to frontend
+2026-07-15 11:48:18,070 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 available in kochi'
+2026-07-15 11:48:18,070 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 11:49:27,772 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 available in kochi'
+2026-07-15 11:49:27,772 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 11:49:33,972 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-15 11:49:33,976 | INFO | app.api.routes | Gemini requested function calls: [FunctionCall(
+  args={
+    'product_name': 'google pixel 9',
+    'user_latitude': 10.0099536,
+    'user_longitude': 76.364782
+  },
+  name='check_product_availability'
+)]
+2026-07-15 11:49:33,977 | INFO | app.api.routes | Executing availability tool: product_name='google pixel 9', latitude=10.0099536, longitude=76.364782
+2026-07-15 11:49:33,977 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 11:49:33,977 | INFO | mcp_client | Preparing availability check for product: google pixel 9
+2026-07-15 11:49:33,977 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 11:49:34,063 | INFO | mcp_client | STDIO connection established.
+2026-07-15 11:49:34,063 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 11:49:36,935 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 11:49:36,936 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'google pixel 9', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 11:49:40,093 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 11:49:40,093 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 11:49:40,093 | INFO | mcp_client | Closing MCP session.
+2026-07-15 11:49:40,302 | INFO | app.api.routes | Tool output: {'success': True, 'product': 'Google Pixel 9', 'store_name': 'MyG Kakkanad', 'address': 'Seaport-Airport Road, Kakkanad', 'city': 'Kochi', 'distance_km': 1.1, 'available_stock': 2}
+2026-07-15 11:49:40,303 | INFO | app.api.routes | Invoking Gemini again with tool output
+2026-07-15 11:49:40,733 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-15 11:50:02,095 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 11:50:02,096 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 11:50:04,142 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-15 11:50:04,152 | INFO | app.api.routes | Gemini requested function calls: [FunctionCall(
+  args={
+    'product_name': 'google pixel 9',
+    'user_latitude': 10.0099536,
+    'user_longitude': 76.364782
+  },
+  name='check_product_availability'
+)]
+2026-07-15 11:50:04,153 | INFO | app.api.routes | Executing availability tool: product_name='google pixel 9', latitude=10.0099536, longitude=76.364782
+2026-07-15 11:50:04,153 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 11:50:04,153 | INFO | mcp_client | Preparing availability check for product: google pixel 9
+2026-07-15 11:50:04,153 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 11:50:04,241 | INFO | mcp_client | STDIO connection established.
+2026-07-15 11:50:04,241 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 11:50:06,243 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 11:50:06,243 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'google pixel 9', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 11:50:09,046 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 11:50:09,046 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 11:50:09,046 | INFO | mcp_client | Closing MCP session.
+2026-07-15 11:50:09,262 | INFO | app.api.routes | Tool output: {'success': True, 'product': 'Google Pixel 9', 'store_name': 'MyG Kakkanad', 'address': 'Seaport-Airport Road, Kakkanad', 'city': 'Kochi', 'distance_km': 1.1, 'available_stock': 2}
+2026-07-15 11:50:09,262 | INFO | app.api.routes | Invoking Gemini again with tool output
+2026-07-15 11:50:09,713 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-15 11:56:51,268 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 11:56:51,268 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 11:59:54,035 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 11:59:54,035 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 11:59:54,758 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-15 12:04:45,740 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:04:45,741 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:06:12,003 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:06:12,008 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:06:56,109 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:06:56,109 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:06:57,502 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-15 12:06:57,508 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:06:57,508 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:06:58,144 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-15 12:06:58,148 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:06:58,148 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:06:58,675 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-15 12:07:13,732 | INFO | app.api.routes | Received availability request for product: 'iphone 16 available near me?'
+2026-07-15 12:07:13,732 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:07:15,035 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-15 12:08:28,913 | INFO | app.api.routes | Received availability request for product: 'iphone 16 available near me?'
+2026-07-15 12:08:28,913 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:08:30,238 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-15 12:10:09,573 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:10:09,573 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:10:10,687 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-15 12:15:50,542 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:15:50,543 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:15:53,315 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-07-15 12:33:04,050 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:33:04,051 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:33:04,676 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:35:09,905 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:35:09,905 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:35:10,622 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:37:46,881 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:37:46,882 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:37:48,031 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:41:28,481 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:41:28,482 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:41:34,670 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:42:07,873 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:42:07,873 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:42:08,906 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:42:40,901 | INFO | app.api.routes | Received availability request for product: 'iPhone 12 store available near me'
+2026-07-15 12:42:40,902 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:42:41,586 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:43:59,631 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:43:59,631 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:44:00,092 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:44:21,840 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:44:21,840 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:44:22,630 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:46:21,388 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:46:21,388 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:46:21,938 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 400 Bad Request"
+2026-07-15 12:54:48,104 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 12:54:48,104 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 12:54:57,405 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-07-15 12:54:57,409 | INFO | app.api.routes | Gemini requested function calls: [FunctionCall(
+  args={
+    'product_name': 'google pixel 9',
+    'user_latitude': 10.0099536,
+    'user_longitude': 76.364782
+  },
+  id='SYIskRBZ',
+  name='check_product_availability'
+)]
+2026-07-15 12:54:57,410 | INFO | app.api.routes | Executing availability tool: product_name='google pixel 9', latitude=10.0099536, longitude=76.364782
+2026-07-15 12:54:57,410 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 12:54:57,410 | INFO | mcp_client | Preparing availability check for product: google pixel 9
+2026-07-15 12:54:57,410 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 12:54:57,540 | INFO | mcp_client | STDIO connection established.
+2026-07-15 12:54:57,540 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 12:55:00,814 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 12:55:00,815 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'google pixel 9', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 12:55:03,602 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 12:55:03,602 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 12:55:03,603 | INFO | mcp_client | Closing MCP session.
+2026-07-15 12:55:04,104 | INFO | app.api.routes | Tool output: {'success': True, 'product': 'Google Pixel 9', 'store_name': 'MyG Kakkanad', 'address': 'Seaport-Airport Road, Kakkanad', 'city': 'Kochi', 'distance_km': 1.1, 'available_stock': 2}
+2026-07-15 12:55:04,105 | INFO | app.api.routes | Invoking Gemini again with tool output
+2026-07-15 12:55:05,909 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-07-15 12:55:05,911 | INFO | app.api.routes | Returning successful response to frontend
+2026-07-15 13:01:02,628 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 13:01:02,628 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 13:01:03,688 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-07-15 13:01:03,689 | INFO | app.api.routes | Gemini requested function calls: [FunctionCall(
+  args={
+    'product_name': 'google pixel 9',
+    'user_latitude': 10.0099536,
+    'user_longitude': 76.364782
+  },
+  id='BgaZhZ2v',
+  name='check_product_availability'
+)]
+2026-07-15 13:01:03,689 | INFO | app.api.routes | Executing availability tool: product_name='google pixel 9', latitude=10.0099536, longitude=76.364782
+2026-07-15 13:01:03,689 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 13:01:03,689 | INFO | mcp_client | Preparing availability check for product: google pixel 9
+2026-07-15 13:01:03,689 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 13:01:03,695 | INFO | mcp_client | STDIO connection established.
+2026-07-15 13:01:03,695 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 13:01:06,043 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 13:01:06,044 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'google pixel 9', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 13:01:08,131 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 13:01:08,131 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 13:01:08,131 | INFO | mcp_client | Closing MCP session.
+2026-07-15 13:01:08,492 | INFO | app.api.routes | Tool output: {'success': True, 'product': 'Google Pixel 9', 'store_name': 'MyG Kakkanad', 'address': 'Seaport-Airport Road, Kakkanad', 'city': 'Kochi', 'distance_km': 1.1, 'available_stock': 2}
+2026-07-15 13:01:08,493 | INFO | app.api.routes | Invoking Gemini again with tool output
+2026-07-15 13:01:09,485 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-07-15 13:01:09,486 | INFO | app.api.routes | Returning successful response to frontend
+2026-07-15 14:15:11,920 | INFO | app.api.routes | Received availability request for product: 'google pixel 9 availale in kochi'
+2026-07-15 14:15:11,921 | INFO | app.api.routes | Invoking Gemini initially with tool access
+2026-07-15 14:15:12,839 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-07-15 14:15:12,841 | INFO | app.api.routes | Gemini requested function calls: [FunctionCall(
+  args={
+    'product_name': 'google pixel 9',
+    'user_latitude': 10.0099536,
+    'user_longitude': 76.364782
+  },
+  id='bzNol2cx',
+  name='check_product_availability'
+)]
+2026-07-15 14:15:12,841 | INFO | app.api.routes | Executing availability tool: product_name='google pixel 9', latitude=10.0099536, longitude=76.364782
+2026-07-15 14:15:12,841 | INFO | mcp_client | MCP Client initialized with transport: stdio
+2026-07-15 14:15:12,841 | INFO | mcp_client | Preparing availability check for product: google pixel 9
+2026-07-15 14:15:12,841 | INFO | mcp_client | Connecting to MCP server via STDIO: D:\Store-Product-Availablity-assisstant\Store-Product-Availablity-assisstant-main\.venv\Scripts\python.exe ['D:\\Store-Product-Availablity-assisstant\\Store-Product-Availablity-assisstant-main\\backend\\server.py']
+2026-07-15 14:15:12,847 | INFO | mcp_client | STDIO connection established.
+2026-07-15 14:15:12,848 | INFO | mcp_client | Initializing MCP session...
+2026-07-15 14:15:15,502 | INFO | mcp_client | MCP session initialized successfully.
+2026-07-15 14:15:15,503 | INFO | mcp_client | Calling tool 'check_product_availability' with arguments: {'product_name': 'google pixel 9', 'user_latitude': 10.0099536, 'user_longitude': 76.364782}
+2026-07-15 14:15:18,383 | INFO | mcp_client | Tool 'check_product_availability' executed successfully.
+2026-07-15 14:15:18,383 | INFO | mcp_client | Successfully parsed MCP tool response.
+2026-07-15 14:15:18,384 | INFO | mcp_client | Closing MCP session.
+2026-07-15 14:15:18,791 | INFO | app.api.routes | Tool output: {'success': True, 'product': 'Google Pixel 9', 'store_name': 'MyG Kakkanad', 'address': 'Seaport-Airport Road, Kakkanad', 'city': 'Kochi', 'distance_km': 1.1, 'available_stock': 2}
+2026-07-15 14:15:18,791 | INFO | app.api.routes | Invoking Gemini again with tool output
+2026-07-15 14:15:19,875 | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-07-15 14:15:19,877 | INFO | app.api.routes | Returning successful response to frontend

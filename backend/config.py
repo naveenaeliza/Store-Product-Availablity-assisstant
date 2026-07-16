@@ -1,0 +1,4 @@
+# User's current location
+
+USER_LATITUDE = 10.0300
+USER_LONGITUDE = 76.3200
